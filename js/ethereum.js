@@ -318,12 +318,16 @@ async function approve() {
               return
             } else {
                 console.log("Approved", res);
-                deposit();
+                callDeposit();
             }
             console.log("Hash of the transaction: " + res)
           })
         ;
 
+}
+
+function callDeposit() {
+    setTimeout(deposit, 3000);
 }
 
 async function deposit() {

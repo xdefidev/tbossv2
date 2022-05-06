@@ -4,7 +4,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 400; #important
+    font-weight: 500; #important
     height: 100vh;
     width: 100vw;
 }
@@ -73,3 +73,14 @@ span {
     font-weight: 300;
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        display: grid;
+        grid-gap: 10px;
+
+    }
+    .container {
+        display: grid;
+        
+  }
